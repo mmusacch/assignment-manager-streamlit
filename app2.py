@@ -41,10 +41,10 @@ points = st.number_input("Points")
 #assignment_type = st.text_input("Choose assignment type")
 assignment_type = st.radio("Type" , ["Homework", "Lab"], horizontal=True)
 st.caption("Homework type") 
-assignemnt_type2 = st.selectbox("Type" , ["Select and option","Homework", "Lab"] )
+assignment_type2 = st.selectbox("Type" , ["Select and option","Homework", "Lab"] )
 
 if assignment_type2 == "other":
-    assignemnt_type2 = st.text_input("Type", placeholder ="Enter the assignment type")
+    assignment_type2 = st.text_input("Type", placeholder ="Enter the assignment type")
 
 due_date = st.date_input("Due Date")
 btn_save= st.button("Save",width="stretch")
